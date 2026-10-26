@@ -46,7 +46,7 @@ h1{font-size:clamp(2.6rem,10.5vw,5.6rem);line-height:.95;letter-spacing:-.03em;f
 .row .n{font-weight:600}
 .row .n small{font-weight:400;color:var(--muted);font-size:.9rem;margin-left:.35rem}
 .row .t{font-family:var(--mono);font-weight:500;font-size:1.1rem}
-.track{height:14px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden}
+.track{display:block;height:14px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden}
 .bar{height:100%;width:var(--w);background:var(--c);border-radius:3px;animation:grow 1s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*.14s + .15s)}
 @keyframes grow{from{width:0}}
 .sky{--c:var(--sky)}.teal{--c:var(--teal)}.pink{--c:var(--pink)}
@@ -93,7 +93,7 @@ footer p{margin:0 0 .4rem}
     <p class="tag">Flights for Sid and Tori</p>
     <h1>Bay Area to Detroit</h1>
     <p class="sub"><b>Nov 11–16, 2026.</b> Four roundtrip options for 2 travelers.</p>
-    <p class="note"><strong>We have SkyBridge miles.</strong> Options 1 and 4 are SkyBridge, so they could be booked with miles. I haven't checked mile costs yet.</p>
+    <p class="note"><strong>We have SkyBridge miles.</strong> Options 1 and 4 are SkyBridge, so they could be booked with miles. We haven't checked mile costs yet.</p>
     <div class="actions">
       <a class="btn" href="#options">See the four options</a>
       <button class="btn ghost" id="share" type="button" hidden>Share with Tori</button>
@@ -103,7 +103,7 @@ footer p{margin:0 0 .4rem}
   <div class="chart">
     <h2>Total for 2, roundtrip</h2>
     <p>Cheapest to priciest. Tap a row to jump to that option.</p>
-    <a class="row teal pinkfix" href="#opt3" style="--w:40.5%;--i:0;--c:var(--pink)"><span class="l"><span class="n">Option 3<small>Zipjet</small></span><span class="t">$428</span></span><span class="track"><span class="bar" style="display:block"></span></span></a>
+    <a class="row pink" href="#opt3" style="--w:40.5%;--i:0"><span class="l"><span class="n">Option 3<small>Zipjet</small></span><span class="t">$428</span></span><span class="track"><span class="bar" style="display:block"></span></span></a>
     <a class="row teal" href="#opt2" style="--w:62.6%;--i:1"><span class="l"><span class="n">Option 2<small>Lakeshore</small></span><span class="t">$662</span></span><span class="track"><span class="bar" style="display:block"></span></span></a>
     <a class="row sky" href="#opt1" style="--w:91.9%;--i:2"><span class="l"><span class="n">Option 1<small>SkyBridge</small></span><span class="t">$972</span></span><span class="track"><span class="bar" style="display:block"></span></span></a>
     <a class="row sky" href="#opt4" style="--w:100%;--i:3"><span class="l"><span class="n">Option 4<small>SkyBridge</small></span><span class="t">$1,058</span></span><span class="track"><span class="bar" style="display:block"></span></span></a>
@@ -178,7 +178,6 @@ footer p{margin:0 0 .4rem}
 
 <footer>
   <p>Fares come from the FareHound email dated Oct 8. They may change, so check the price again before booking.</p>
-  <p>Made for Sid and Tori.</p>
 </footer>
 </div>
 <script>
